@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+    <audio src="" id="audio"></audio>
+    <div class="wrapper">
+        <div class="container">
+            <div class="song-name">Song1</div>
+            <div class="Artist">Artist</div>
+            <div class="avatar">
+                <img src="./img/Chúng_ta_của_hiện_tại.jpg" alt="Chung-ta-cua-hien-tai" class="avatar-name">
+            </div>
+
+            <div class="author-wrapper">
+                <div class="author-name">ChienLnl</div>
+            </div>
+            <div class="prog">
+                <div class="time">
+                    <div class="start">
+                        <p id="start">0:00</p>
+                    </div>
+
+                    <div class="end">
+                        <p id="end">0:00</p>
+                    </div>
+
+                </div>
+                <div class="seekbar-wrapper">
+                    <input type="range" class="seek-bar" min="0" max="100" value="0">
+                </div>
+            </div>
+
+            <div class="msc-center">
+                <div class="play-reload">
+                    <i class="fa-solid fa-rotate-right fa-lg fa-custom"></i>
+                </div>
+                <div class="play-back">
+                    <i class="fa-solid fa-backward-step fa-lg fa-custom"></i>
+                </div>
+
+                <div class="play-start-pause">
+                    <i class="fa-solid fa-pause fa-lg fa-custom none"></i>
+                    <i class="fa-solid fa-play fa-lg fa-custom "></i>
+
+                </div>
+                <div class="play-step">
+                    <i class="fa-solid fa-forward-step fa-lg fa-custom"></i>
+                </div>
+                <div class="play-comment">
+                    <i class="fa-solid fa-list fa-lg fa-custom"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="playlist "></div>
+        <canvas id="matrix"></canvas>
+
+
+
+        <script src="app.js"></script>
+
+
+</body>
+
+</html>
+
