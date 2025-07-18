@@ -72,7 +72,7 @@ function loadMusic(index) {
 music.addEventListener('loadedmetadata', () => {
         seekbar.max = music.duration;
         musicDuration.innerHTML = formatTime(music.duration);
-    }, { once: true });
+    }, { once: false });
 
 
 loadMusic(currentMusic);
